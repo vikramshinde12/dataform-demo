@@ -1,6 +1,14 @@
 config {
     type: "operations",
     tags: ["least_liked"],
-    dependencies: ["source_table"]
+    dependencies: ["source_table",
+        "dataform_eu_source_view_assertions_rowConditions",
+        "dataform_eu_source_view_assertions_uniqueKey_0"
+    ]
 }
-DELETE FROM dataform_eu.source_table WHERE fruit = 'bananas';
+
+DELETE
+FROM
+  dataform_eu.source_table
+WHERE
+  fruit = 'bananas';

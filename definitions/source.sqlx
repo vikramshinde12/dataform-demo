@@ -2,6 +2,12 @@ config {
     type: "view",
     name: "source_view",
     description: "Description of the table",
+    assertions: {
+        uniqueKey: ["fruit"],
+        rowConditions: [
+            'count > 5'
+        ]
+    }
 
 }
 

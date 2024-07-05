@@ -1,0 +1,17 @@
+config {
+    type: "view",
+    name: "source2",
+    description: "Description of the table",
+    columns: {
+      user_id: docs.user_id
+    }
+
+}
+
+SELECT
+ 1 as user_id,
+ 10 as age
+ UNION ALL
+ SELECT 
+ 2 as user_id,
+ 20 as age

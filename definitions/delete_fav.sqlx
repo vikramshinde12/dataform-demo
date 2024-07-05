@@ -1,7 +1,9 @@
 config {
     type: "operations",
     tags: ["fav"],
-    dependencies: ["source_table"]
+    dependencies: ["source_table", 
+    "dataform_eu_source_view_assertions_rowConditions",
+    "dataform_eu_source_view_assertions_uniqueKey_0"]
 }
 
 DELETE

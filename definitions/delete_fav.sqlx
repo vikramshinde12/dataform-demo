@@ -1,0 +1,11 @@
+config {
+    type: "operations",
+    tags: ["fav"],
+    dependencies: ["source_table"]
+}
+
+DELETE
+FROM
+  dataform_eu.source_table
+WHERE
+  fruit = 'pears';

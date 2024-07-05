@@ -1,9 +1,11 @@
 config {
     type: "table",
+    name: "source_table",
+    tags: ["least_liked"],
     description: "This table calculates AVG from the source view",
 }
 
 SELECT
-  AVG(count) AS number_avg
+  *
 FROM
   ${ref("source_view")}

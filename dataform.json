@@ -1,0 +1,7 @@
+{
+    "defaultSchema": "dataform_eu",
+    "assertionSchema": "dataform_assertions_eu",
+    "warehouse": "bigquery",
+    "defaultDatabase": "dataform-demo-428110",
+    "defaultLocation": "EU"
+}
